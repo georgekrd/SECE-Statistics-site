@@ -1,0 +1,136 @@
+/* User Provided Stylesheet */
+
+/*
+ * DECE Research Analytics - site stylesheet (myst.yml: site.options.style).
+ *
+ * Figures from dece_stats.plotting have transparent backgrounds and light-mode ink.
+ * When the reader switches the site to dark mode (the theme sets class="dark" on
+ * <html>), the rules below re-ink the plotly chrome: titles, ticks, legends, grid,
+ * axis lines, hover labels, the mode bar and map land. Series colours are not
+ * touched: the categorical palette is valid on both page colours.
+ */
+
+/* ---- Page chrome ----------------------------------------------------------------- */
+/* No "download source" menu: the notebooks only run inside the private repository. */
+.myst-fm-downloads-dropdown {
+  display: none !important;
+}
+
+/* Site footer (myst.yml site.parts.footer): keep it in the text column. */
+footer.footer.article-grid > * {
+  grid-column: body;
+}
+
+footer.footer.article-grid {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: #57534e;
+}
+
+html.dark footer.footer.article-grid {
+  color: #a8a29e;
+}
+
+/* Computed numbers ({eval} inline expressions): shown as plain text, without the dotted
+   underline and without the pop-up that would show the Python expression behind them.
+   Abbreviations (abbr.hover-text) keep their own underline and pop-up. */
+article span.border-dotted.cursor-help {
+  border-bottom-width: 0 !important;
+  cursor: inherit !important;
+}
+
+.hover-card-content:has(> .bg-myst-inverse-bg > code) {
+  display: none !important;
+}
+
+/* ---- Tables (dece_stats.plotting.table_html) --------------------------------------- */
+/* Header cells may wrap so that wide tables fit the text column; the figures in the body
+   stay on one line (.num). The selectors outrank the table's own nowrap rules. */
+html .dece-table-wrap table.dece-table thead th,
+html .dece-table-wrap table.dece-table thead th.num {
+  white-space: normal;
+}
+
+/* Phones: narrower cell padding, so that most tables fit the column without scrolling. */
+@media (max-width: 480px) {
+  html .dece-table-wrap table.dece-table th,
+  html .dece-table-wrap table.dece-table td {
+    padding-left: 7px;
+    padding-right: 7px;
+  }
+}
+
+/* ---- Plotly in dark mode ------------------------------------------------------ */
+html.dark .js-plotly-plot .main-svg .gtitle,
+html.dark .js-plotly-plot .main-svg .g-gtitle text {
+  fill: #f5f5f4 !important;
+}
+
+html.dark .js-plotly-plot .main-svg .xtick text,
+html.dark .js-plotly-plot .main-svg .ytick text,
+html.dark .js-plotly-plot .main-svg .xtitle,
+html.dark .js-plotly-plot .main-svg .ytitle,
+html.dark .js-plotly-plot .main-svg .colorbar text,
+html.dark .js-plotly-plot .main-svg .annotation-text-g text {
+  fill: #a8a29e !important;
+}
+
+html.dark .js-plotly-plot .main-svg .legendtext,
+html.dark .js-plotly-plot .main-svg .legendtitletext,
+html.dark .js-plotly-plot .main-svg .bartext-outside {
+  fill: #d6d3d1 !important;
+}
+
+html.dark .js-plotly-plot .main-svg .gridlayer path {
+  stroke: #292524 !important;
+}
+
+html.dark .js-plotly-plot .main-svg .zerolinelayer path,
+html.dark .js-plotly-plot .main-svg path.xlines-above,
+html.dark .js-plotly-plot .main-svg path.ylines-above,
+html.dark .js-plotly-plot .main-svg path.xlines-below,
+html.dark .js-plotly-plot .main-svg path.ylines-below {
+  stroke: #57534e !important;
+}
+
+/* 2px gap between touching bars / stacked segments uses the page colour */
+html.dark .js-plotly-plot .main-svg .trace.bars .point path {
+  stroke: #1c1917 !important;
+}
+
+/* hover labels (per-point and unified) */
+html.dark .js-plotly-plot .hoverlayer .hovertext path,
+html.dark .js-plotly-plot .hoverlayer .legend rect.bg,
+html.dark .js-plotly-plot .hoverlayer .axistext path {
+  fill: #292524 !important;
+  stroke: #57534e !important;
+}
+
+html.dark .js-plotly-plot .hoverlayer .hovertext text,
+html.dark .js-plotly-plot .hoverlayer .legend text,
+html.dark .js-plotly-plot .hoverlayer .axistext text {
+  fill: #f5f5f4 !important;
+}
+
+/* mode bar */
+html.dark .js-plotly-plot .modebar-btn path {
+  fill: #a8a29e !important;
+}
+
+html.dark .js-plotly-plot .modebar-btn:hover path,
+html.dark .js-plotly-plot .modebar-btn.active path {
+  fill: #f5f5f4 !important;
+}
+
+/* maps: land without data, country borders */
+html.dark .js-plotly-plot .geo .layer.land path,
+html.dark .js-plotly-plot .geo path.land {
+  fill: #292524 !important;
+}
+
+html.dark .js-plotly-plot .geo .layer.countries path,
+html.dark .js-plotly-plot .geo path.countries,
+html.dark .js-plotly-plot .choroplethlayer path.choroplethlocation,
+html.dark .js-plotly-plot .choroplethlayer path {
+  stroke: #1c1917 !important;
+}

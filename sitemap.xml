@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="http://localhost:3001/sitemap_style.xsl" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>http://localhost:3001</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3001/output</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3001/impact</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3001/venues</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3001/topics</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3001/collaboration</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3001/geography</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3001/funding</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3001/people</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3001/methodology</loc>
+  </url>
+</urlset>
