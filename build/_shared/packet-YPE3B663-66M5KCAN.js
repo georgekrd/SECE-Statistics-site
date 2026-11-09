@@ -1,1 +1,1 @@
-import{a as e,b as r}from"/DECE-Statistics-site/build/_shared/chunk-IMEQYZY3.js";import"/DECE-Statistics-site/build/_shared/chunk-GEZIJWLJ.js";import"/DECE-Statistics-site/build/_shared/chunk-RAQ24GF6.js";export{e as PacketModule,r as createPacketServices};
+import{a as e,b as r}from"/SECE-Statistics-site/build/_shared/chunk-IMEQYZY3.js";import"/SECE-Statistics-site/build/_shared/chunk-GEZIJWLJ.js";import"/SECE-Statistics-site/build/_shared/chunk-RAQ24GF6.js";export{e as PacketModule,r as createPacketServices};

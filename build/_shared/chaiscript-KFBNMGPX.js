@@ -1,1 +1,1 @@
-import{a}from"/DECE-Statistics-site/build/_shared/chunk-BGDLHX7X.js";import"/DECE-Statistics-site/build/_shared/chunk-OZPHNX4P.js";import"/DECE-Statistics-site/build/_shared/chunk-W5F6WS2S.js";import"/DECE-Statistics-site/build/_shared/chunk-RAQ24GF6.js";export default a();
+import{a}from"/SECE-Statistics-site/build/_shared/chunk-BGDLHX7X.js";import"/SECE-Statistics-site/build/_shared/chunk-OZPHNX4P.js";import"/SECE-Statistics-site/build/_shared/chunk-W5F6WS2S.js";import"/SECE-Statistics-site/build/_shared/chunk-RAQ24GF6.js";export default a();

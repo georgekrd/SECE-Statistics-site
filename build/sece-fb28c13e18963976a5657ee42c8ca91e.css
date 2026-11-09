@@ -1,7 +1,7 @@
 /*
- * DECE Research Analytics - site stylesheet (myst.yml: site.options.style).
+ * SECE Research Analytics - site stylesheet (myst.yml: site.options.style).
  *
- * Figures from dece_stats.plotting have transparent backgrounds and light-mode ink.
+ * Figures from sece_stats.plotting have transparent backgrounds and light-mode ink.
  * When the reader switches the site to dark mode (the theme sets class="dark" on
  * <html>), the rules below re-ink the plotly chrome: titles, ticks, legends, grid,
  * axis lines, hover labels, the mode bar and map land. Series colours are not
@@ -41,18 +41,18 @@ article span.border-dotted.cursor-help {
   display: none !important;
 }
 
-/* ---- Tables (dece_stats.plotting.table_html) --------------------------------------- */
+/* ---- Tables (sece_stats.plotting.table_html) --------------------------------------- */
 /* Header cells may wrap so that wide tables fit the text column; the figures in the body
    stay on one line (.num). The selectors outrank the table's own nowrap rules. */
-html .dece-table-wrap table.dece-table thead th,
-html .dece-table-wrap table.dece-table thead th.num {
+html .sece-table-wrap table.sece-table thead th,
+html .sece-table-wrap table.sece-table thead th.num {
   white-space: normal;
 }
 
 /* Phones: narrower cell padding, so that most tables fit the column without scrolling. */
 @media (max-width: 480px) {
-  html .dece-table-wrap table.dece-table th,
-  html .dece-table-wrap table.dece-table td {
+  html .sece-table-wrap table.sece-table th,
+  html .sece-table-wrap table.sece-table td {
     padding-left: 7px;
     padding-right: 7px;
   }

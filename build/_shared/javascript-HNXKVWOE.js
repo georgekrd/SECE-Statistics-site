@@ -1,1 +1,1 @@
-import{a,b,c,d,e}from"/DECE-Statistics-site/build/_shared/chunk-L4B4KBGY.js";import"/DECE-Statistics-site/build/_shared/chunk-RAQ24GF6.js";e();export{a as javascript,b as json,c as jsonld,d as typescript};
+import{a,b,c,d,e}from"/SECE-Statistics-site/build/_shared/chunk-L4B4KBGY.js";import"/SECE-Statistics-site/build/_shared/chunk-RAQ24GF6.js";e();export{a as javascript,b as json,c as jsonld,d as typescript};

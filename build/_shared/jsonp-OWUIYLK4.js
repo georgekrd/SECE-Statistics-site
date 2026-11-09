@@ -1,1 +1,1 @@
-import{a}from"/DECE-Statistics-site/build/_shared/chunk-XACYUPCB.js";import"/DECE-Statistics-site/build/_shared/chunk-OAPC274K.js";import"/DECE-Statistics-site/build/_shared/chunk-RAQ24GF6.js";export default a();
+import{a}from"/SECE-Statistics-site/build/_shared/chunk-XACYUPCB.js";import"/SECE-Statistics-site/build/_shared/chunk-OAPC274K.js";import"/SECE-Statistics-site/build/_shared/chunk-RAQ24GF6.js";export default a();
