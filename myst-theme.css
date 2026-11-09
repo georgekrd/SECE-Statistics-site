@@ -60,6 +60,15 @@ html .sece-table-wrap table.sece-table thead th.num {
   }
 }
 
+/* ---- Plotly mode bar ---------------------------------------------------------- */
+/* The theme makes every svg a block, which stacks the buttons of a map's mode bar (zoom
+   in, zoom out, reset) in a column with wide, overlapping click areas. Plotly's own
+   inline icons keep the buttons on one row. */
+.js-plotly-plot .plotly .modebar-btn svg {
+  display: inline;
+  vertical-align: baseline;
+}
+
 /* ---- Plotly in dark mode ------------------------------------------------------ */
 html.dark .js-plotly-plot .main-svg .gtitle,
 html.dark .js-plotly-plot .main-svg .g-gtitle text {
